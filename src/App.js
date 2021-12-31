@@ -27,7 +27,7 @@ function App(props) {
   // State & Other Variables
   //////////////////
   //api url
-  const url ="https://newexpenset.herokuapp.com/transactions"
+  const url ="https://newexpenset.herokuapp.com/transactions/"
 
   // state to hold list of transactions
   const [transactions, setTransactions] = useState([])
@@ -59,20 +59,24 @@ function App(props) {
         <Route
           exact
           path = "/"
-          render={(routerProps) => {return <AllTransactions {...routerProps}/>}}
+          render={(routerProps) => {
+            return <AllTransactions {...routerProps}/>}}
         />
         <Route
           path="/transaction/:id"
-          render={(routerProps) => {return <SingleTransaction {...routerProps}
+          render={(routerProps) => {
+            return <SingleTransaction {...routerProps}
           transactions={transactions}/>}}
         />
         <Route
           path="/new"
-          render={(routerProps) => {return <Form {...routerProps} />}}
+          render={(routerProps) => {
+            return <Form {...routerProps} />}}
         />
         <Route
           path="/edit"
-          render={(routerProps) => {return <Form {...routerProps} />}}
+          render={(routerProps) => {
+            return <Form {...routerProps} />}}
         />
       </Switch>
     </div>
