@@ -60,13 +60,14 @@ function App(props) {
           exact
           path = "/"
           render={(routerProps) => {
-            return <AllTransactions {...routerProps}/>}}
+            return <AllTransactions {...routerProps}
+            transactions={transactions}/>}}
         />
         <Route
           path="/transaction/:id"
           render={(routerProps) => {
             return <SingleTransaction {...routerProps}
-          transactions={transactions}/>}}
+            transactions={transactions}/>}}
         />
         <Route
           path="/new"
