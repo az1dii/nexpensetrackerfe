@@ -16,9 +16,9 @@ const SingleTransaction = ({ transactions, match }) => {
     }
 
     return <div style={div}>
-        <h1>{transaction.name}</h1>
-        <h2>{transaction.amount}</h2>
-        <h2>{transaction.detail}</h2>
+        <h1>{transaction?.name}</h1>
+        <h2>{transaction?.amount}</h2>
+        <h2>{transaction?.detail}</h2>
         <Link to="/">
             <button>go back</button>
         </Link>
