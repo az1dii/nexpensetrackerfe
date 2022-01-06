@@ -18,13 +18,9 @@ function MainApp(props) {
   ////////////////////
   // Style Objects
   ////////////////////
-  const h1 = {
-    textAlign: "center",
-    margin: "10px",
-  };
 
   const button = {
-    backgroundColor: "navy",
+    backgroundColor: "Grey",
     display: "block",
     margin: "auto"
   }
@@ -112,7 +108,7 @@ function MainApp(props) {
   return (
     <div className="App">
       <Navbar />
-      <Link to="/new"><button style={button}>Create New List</button></Link>
+      <Link to="/"><button style={button}>Please Login</button></Link>
       
       <Switch>
         <Route
