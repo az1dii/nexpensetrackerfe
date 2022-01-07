@@ -4,7 +4,6 @@ import Form from "./pages/Form"
 import Navbar from "./components/NavBar/Navbar";
 
 
-
 // import React Hooks
 import {useState, useEffect} from "react"
 
@@ -13,7 +12,7 @@ import {Route, Switch, Link} from "react-router-dom"
 
 
 
-function MainApp(props) {
+function App(props) {
 
   ////////////////////
   // Style Objects
@@ -154,4 +153,4 @@ function MainApp(props) {
   );
 }
 
-export default MainApp;
+export default App;

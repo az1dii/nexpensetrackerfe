@@ -6,10 +6,11 @@ const Transaction = ({ transaction }) => {
   // Style Objects
   //////////////////
   const div = {
-    textAlign: "left",
+    textAlign: "center",
+    size: "10rem",
     border: "3px solid",
-    margin: "10px auto",
-    width: "80%",
+    margin: "2px auto",
+    width: "25%",
   };
   return (
     <div style={div}>

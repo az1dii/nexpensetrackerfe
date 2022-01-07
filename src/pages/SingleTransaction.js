@@ -10,7 +10,7 @@ const SingleTransaction = ({ transactions, match, edit, deleteList }) => {
     ////////////////////
     const div = {
         textAlign:"center",
-        border: "3px solid green",
+        border: "3px solid gray",
         width: "80%",
         margin: "30px auto"
     }

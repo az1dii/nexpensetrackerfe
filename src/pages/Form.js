@@ -3,6 +3,15 @@ import React, { useState } from "react";
 
 //destructure out props, including router prop history
 const Form = ({ initialList, handleSubmit, buttonLabel, history }) => {
+
+  const formstyle = {
+    textAlign:"center",
+    border: "3px solid gray",
+    width: "40%",
+    margin: "80px auto"
+  }
+
+  
   ////////////////
   // The Form Data State
   ////////////////
@@ -28,27 +37,32 @@ const Form = ({ initialList, handleSubmit, buttonLabel, history }) => {
 
   // Our Form, an input for the subject and details fields and a submit button
   return (
-    <form onSubmit={handleSubmisson}>
-      <input
-        type="text"
-        onChange={handleChange}
-        value={formData?.name}
-        name="name"
-      />
-      <input
-        type="number"
-        onChange={handleChange}
-        value={formData?.amount}
-        name="amount"
-      />
-      <input
-        type="text"
-        onChange={handleChange}
-        value={formData?.detail}
-        name="detail"
-      />
-      <input type="submit" value={buttonLabel} />
-    </form>
+    <div style = {formstyle}>
+      <form onSubmit={handleSubmisson}>
+        <input
+          type="text"
+          onChange={handleChange}
+          value={formData?.name}
+          name="name"
+          placeholder="NAME"
+        />
+        <input
+          type="number"
+          onChange={handleChange}
+          value={formData?.amount}
+          name="amount"
+          placeholder="AMOUNT"
+        />
+        <input
+          type="text"
+          onChange={handleChange}
+          value={formData?.detail}
+          name="detail"
+          placeholder="DETAIL"
+        />
+        <input type="submit" value={buttonLabel} />
+      </form>
+    </div> 
   );
 }
 export default Form;
