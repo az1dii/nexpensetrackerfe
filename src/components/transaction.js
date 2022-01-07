@@ -6,7 +6,7 @@ const Transaction = ({ transaction }) => {
   // Style Objects
   //////////////////
   const div = {
-    textAlign: "center",
+    textAlign: "left",
     border: "3px solid",
     margin: "10px auto",
     width: "80%",
@@ -16,7 +16,7 @@ const Transaction = ({ transaction }) => {
       <Link to={`/transaction/${transaction.id}`}>
         <h1>{transaction.name}</h1>
       </Link>
-      <h2>{transaction.amount}</h2>
+      <h2>$ {transaction.amount}</h2>
       <h2>{transaction.detail}</h2>
     </div>
   );

@@ -18,11 +18,11 @@ const SingleTransaction = ({ transactions, match, edit, deleteList }) => {
     return (
         <div style={div}>
             <h1>{transaction?.name}</h1>
-            <h2>{transaction?.amount}</h2>
+            <h2>$ {transaction?.amount}</h2>
             <h2>{transaction?.detail}</h2>
             <button onClick={(event) => edit(transaction)}>Edit</button>
             <button onClick={(event) => deleteList(transaction)}>Delete</button>
-            <Link to="/">
+            <Link to="/alltransactions">
                 <button>go back</button>
             </Link>
         </div>

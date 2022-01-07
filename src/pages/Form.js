@@ -23,7 +23,7 @@ const Form = ({ initialList, handleSubmit, buttonLabel, history }) => {
     //pass formData to handleSubmit prop function
     handleSubmit(formData);
     //push user back to main page
-    history.push("/");
+    history.push("/alltransactions");
   };
 
   // Our Form, an input for the subject and details fields and a submit button
