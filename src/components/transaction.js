@@ -10,7 +10,7 @@ const Transaction = ({ transaction }) => {
     size: "10rem",
     border: "3px solid",
     margin: "2px auto",
-    width: "25%",
+    width: "40%",
   };
   return (
     <div style={div}>

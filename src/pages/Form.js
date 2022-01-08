@@ -7,8 +7,8 @@ const Form = ({ initialList, handleSubmit, buttonLabel, history }) => {
   const formstyle = {
     textAlign:"center",
     border: "3px solid gray",
-    width: "40%",
-    margin: "80px auto"
+    width: "30%",
+    margin: "0px auto"
   }
 
   

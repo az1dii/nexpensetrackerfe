@@ -11,7 +11,7 @@ const SingleTransaction = ({ transactions, match, edit, deleteList }) => {
     const div = {
         textAlign:"center",
         border: "3px solid gray",
-        width: "80%",
+        width: "90%",
         margin: "30px auto"
     }
 
