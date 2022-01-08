@@ -54,7 +54,6 @@ function App(props) {
 
   // Function to add list from form data
   const addLists = async (newList) => {
-    // eslint-disable-next-line
     const response = await fetch(url, {
       method: "post",
       headers: {
@@ -71,7 +70,6 @@ function App(props) {
   }
 
   const updateList = async (list) => {
-    // eslint-disable-next-line
     const response = await fetch(url + list.id + "/", {
       method: "put",
       headers: {
@@ -86,7 +84,6 @@ function App(props) {
 
    // Function to edit todo on form submission
    const deleteList= async (list) => {
-     // eslint-disable-next-line
     const response = await fetch(url + list.id + "/", {
       method: "delete",
     });
